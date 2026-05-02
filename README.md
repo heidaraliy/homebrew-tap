@@ -1,4 +1,4 @@
-# Heidaraliy Tap
+# Homebrew Formulae
 
 ## How do I install these formulae?
 
