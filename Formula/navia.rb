@@ -1,26 +1,26 @@
 class Navia < Formula
   desc "Terminal micro-IDE for project navigation, editing, search, and git review"
   homepage "https://github.com/heidaraliy/navia"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/heidaraliy/navia/releases/download/v0.1.2/navia_0.1.2_darwin_arm64.tar.gz"
-      sha256 "056477dc91f7854d8544cd97eba13efa82e04bb02e6beb3684dab5fdeb58b883"
+      url "https://github.com/heidaraliy/navia/releases/download/v0.1.3/navia_0.1.3_darwin_arm64.tar.gz"
+      sha256 "9031a7de80d25fb7ce8dff2778e43d8741386a04916fb05a5afdfad10d42c9b8"
     else
-      url "https://github.com/heidaraliy/navia/releases/download/v0.1.2/navia_0.1.2_darwin_amd64.tar.gz"
-      sha256 "dbe1acb4c5150f3ea9214bb0e4aeb6c35758c7b14aa2a5410ca3c4f03818beaa"
+      url "https://github.com/heidaraliy/navia/releases/download/v0.1.3/navia_0.1.3_darwin_amd64.tar.gz"
+      sha256 "5c5bdf66e8f0324fdd790b067c6188544aa0ec5af0d0376267fa5a31d2be642a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/heidaraliy/navia/releases/download/v0.1.2/navia_0.1.2_linux_arm64.tar.gz"
-      sha256 "9147c8178000bb53da12b529177ac46d1d967c3ad071ecf3f2bbfcda4749f1d4"
+      url "https://github.com/heidaraliy/navia/releases/download/v0.1.3/navia_0.1.3_linux_arm64.tar.gz"
+      sha256 "ca82fbfa531b53ba38cad6e9e639d6d077b78e3a01abc5a0a77b3b171547d5d4"
     else
-      url "https://github.com/heidaraliy/navia/releases/download/v0.1.2/navia_0.1.2_linux_amd64.tar.gz"
-      sha256 "c44b2464d226eb5271a44b91e816ede0d17f7d12d0aca4e9be6f1eb088099bd6"
+      url "https://github.com/heidaraliy/navia/releases/download/v0.1.3/navia_0.1.3_linux_amd64.tar.gz"
+      sha256 "1306ceb74535451c2b69a230d6e23383599b1be6c7c8d6387b15eb1d15088f1c"
     end
   end
 
@@ -29,6 +29,6 @@ class Navia < Formula
   end
 
   test do
-    assert_match "navia 0.1.2", shell_output("#{bin}/navia --version")
+    assert_match "navia 0.1.3", shell_output("#{bin}/navia --version")
   end
 end
